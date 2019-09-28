@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Платёжное поручение</title>
+	<meta name="description" content="Author: I.L. Balod">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+	<header class="header d-flex align-items-center">
+		<div class="logo d-flex align-items-center">
+			<a class="logo-wrap d-flex align-items-center" href="#">
+				<svg class="logo-icon">
+					<use xlink:href="img/icons/sprites.svg#logo"></use>
+				</svg>
+			</a>
+
+			<div class="search d-flex align-items-center">
+				<svg class="search-icon">
+					<use xlink:href="img/icons/sprites.svg#search"></use>
+				</svg>
+				<a class="search-link" href="#">Поиск</a>
+			</div>
+		</div>
+
+		<div class="controls d-flex align-items-center justify-content-between">
+			<nav class="nav">
+				<a class="nav-link active" href="#">Деньги</a>
+				<a class="nav-link" href="#">Контакты</a>
+				<div class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button"
+						aria-haspopup="true" aria-expanded="false">Услуги
+						<svg class="nav-link__icon">
+							<use xlink:href="img/icons/sprites.svg#arrow-down"></use>
+						</svg>
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Платежи</a>
+						<a class="dropdown-item" href="#">Переводы</a>
+						<a class="dropdown-item" href="#">Все услуги</a>
+					</div>
+				</div>
+			</nav>
+
+			<div class="account-wrap d-flex">
+				<div class="account-wrap__notify">
+					<svg class="account-wrap__notify-icon">
+						<use xlink:href="img/icons/sprites.svg#bell"></use>
+					</svg>
+					<div class="account-wrap__notify-counter d-flex align-items-center justify-content-center">
+						<!--Счётчик расчитан на двузначные числа. Для трёхзначных нужны дополнительные настройки вёрстки-->
+						<span>2</span>
+					</div>
+				</div>
+				<div class="account-wrap__user d-flex">
+					<div class="account-wrap__user-logo">
+						<svg class="account-wrap__user-logo__icon">
+							<use xlink:href="img/icons/sprites.svg#house"></use>
+						</svg>
+					</div>
+
+					<div class="account-wrap__user-name dropdown">
+						<a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
+							aria-expanded="false">ООО &laquo;РОДНЫЕ ПРОСТОРЫ&raquo;
+							<svg class="dropdown__icon">
+								<use xlink:href="img/icons/sprites.svg#arrow-down"></use>
+							</svg>
+						</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">Личный кабинет</a>
+							<a class="dropdown-item" href="#">Настройки</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Выйти</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a class="plus" href="#">
+			<svg class="plus-icon">
+				<use xlink:href="img/icons/sprites.svg#plus"></use>
+			</svg>
+		</a>
+	</header>
+
+	<main class="main d-flex justify-content-end">
+
+		<div class="invoice">
+			<div class="invoice-head d-flex align-items-center">
+				<svg class="invoice-head__icon">
+					<use xlink:href="img/icons/sprites.svg#cross"></use>
+				</svg>
+				<h1 class="invoice-head__title">Платежное поручение № 5241234 от 23.09.2015</h1>
+			</div>
+
+			<div class="invoice-body d-flex flex-column justify-content-center">
+				<div class="invoice-body__coast">&ndash; 23 500,00 &#8381;</div>
+				<div class="invoice-body__payment">
+					<div class="invoice-body__payment-account">
+						<span>со счета:</span> Расчетный счет (***012345)
+					</div>
+					<div class="invoice-body__payment-status">
+						ИСПОЛНЕН, 21 июня 15:33
+					</div>
+				</div>
+
+				<div class="summary-wrap d-flex flex-column">
+					<div class="summary d-flex justify-content-between">
+						<div class="summary-requisite">
+							<div class="summary-requisite__title">ООО "Родные просторы"</div>
+							<ul class="summary-requisite-list">
+								<li class="summary-requisite-list__item">ИНН: 22341497819132</li>
+								<li class="summary-requisite-list__item">Банк: ОАО Сбербанк</li>
+								<li class="summary-requisite-list__item">БИК: 2352362365</li>
+								<li class="summary-requisite-list__item">Счет: 40802810970010000395</li>
+							</ul>
+						</div>
+
+						<div class="summary-status">
+							<div class="summary-status__item d-flex justify-content-between align-items-center">
+								<a class="summary-status__item-link" href="">Высокая финансовая<br>устойчивость</a>
+								<div class="summary-status__item-widget progress">
+									<div class="center">88</div>
+								</div>
+							</div>
+							<div class="summary-status__item d-flex justify-content-between align-items-center">
+								<a class="summary-status__item-link" href="">Высокая<br>благонадёжность</a>
+								<div class="summary-status__item-widget progress">
+									<div class="center">100</div>
+								</div>
+							</div>
+							<div class="summary-status__item d-flex justify-content-between align-items-center">
+								<a class="summary-status__item-link" href="">Кредитоспособность<br>44,5 млрд &#8381;</a>
+								<div
+									class="summary-status__item-widget d-flex flex-column align-items-center justify-content-center">
+									1<span>Класс</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="summary-description">
+						<div class="summary-description-text">
+							Оплата за партию ромашек и одуванчиков по договору 14023-023 от 14.05.2015 г. Сумма
+							11430-00. В том числе НДС 18% - 1450,00 ₽
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="fine-wrap">
+				<div class="fine-cost">
+					Комиссия банка: 70 р.
+				</div>
+				<div class="fine-details">
+						Размер комиссии рассчитан автоматически согласно тарифу вашей компании и является ознакомительным. Точный размер комиссии определяется после передачи платежного документа на обработку в банк.
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer-nav d-flex justify-content-center align-items-center">
+			<a class="footer-nav__link d-flex align-items-center" href="#">
+				<svg class="footer-nav__link-icon">
+					<use xlink:href="img/icons/sprites.svg#reload"></use>
+				</svg>
+				<span>Повторить</span>
+			</a>
+			<a class="footer-nav__link d-flex align-items-center" href="#">
+				<svg class="footer-nav__link-icon">
+					<use xlink:href="img/icons/sprites.svg#star"></use>
+				</svg>
+				<span>В избранное</span>
+			</a>
+			<a class="footer-nav__link d-flex align-items-center" href="#">
+				<svg class="footer-nav__link-icon">
+					<use xlink:href="img/icons/sprites.svg#message"></use>
+				</svg>
+				<span>Спросить</span>
+			</a>
+			<a class="footer-nav__link d-flex align-items-center" href="#">
+				<svg class="footer-nav__link-icon">
+					<use xlink:href="img/icons/sprites.svg#dots"></use>
+				</svg>
+				<span>Действия</span>
+			</a>
+		</div>
+	</footer>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>
